@@ -1,0 +1,82 @@
+{
+	"manifest_version": 3,
+	"version": "0.1",
+	"name": "SUPERHOT piOS",
+	"short_name": "piOS",
+	"description": "SUPERHOT piOS inspired theme",
+	"author": "Saltssaumure",
+	"icons": {
+		"16": "asset/icon/16.png",
+		"48": "asset/icon/48.png",
+		"128": "asset/icon/128.png"
+	},
+
+	"theme": {
+		"colors": {
+			"frame": [0, 0, 0],
+			"frame_inactive": [50, 38, 38],
+			"frame_incognito": [32, 33, 36],
+			"frame_incognito_inactive": [60, 64, 67],
+
+			"toolbar": [16, 16, 16],
+			"toolbar_button_icon": [255, 0, 0],
+			"toolbar_text": [255, 255, 255],
+
+			"tab_background_text": [123, 123, 123],
+			"tab_background_text_inactive": [168, 168, 168],
+			"tab_background_text_incognito": [189, 193, 198],
+			"tab_background_text_incognito_inactive": [167, 171, 174],
+			"tab_text": [255, 0, 3],
+
+			"background_tab": [0, 0, 0],
+			"background_tab_inactive": [26, 17, 17],
+			"background_tab_incognito": [32, 33, 36],
+			"background_tab_incognito_inactive": [60, 64, 67],
+
+			"bookmark_text": [255, 0, 4],
+			"button_background": [255, 255, 255],
+
+			"ntp_background": [255, 255, 255],
+			"ntp_header": [255, 255, 255],
+			"ntp_link": [255, 255, 255],
+			"ntp_text": [255, 255, 255],
+
+			"omnibox_background": [0, 0, 0],
+			"omnibox_text": [255, 0, 0]
+		},
+
+		"tints": {
+			"background_tab": [1, 1, 1],
+			"buttons": [1, 1, 1],
+
+			"frame": [1, 1, 1],
+			"frame_inactive": [1, 1, 1],
+			"frame_incognito": [1, 1, 1],
+			"frame_incognito_inactive": [1, 1, 1]
+		},
+
+		"asset": {
+			"theme_frame": "asset/test.png",
+			"theme_frame_inactive": "asset/test.png",
+			"theme_frame_incognito": "asset/test.png",
+			"theme_frame_incognito_inactive": "asset/test.png",
+			"theme_toolbar": "asset/test.png",
+			"theme_tab_background": "asset/test.png",
+			"theme_tab_background_inactive": "asset/test.png",
+			"theme_tab_background_incognito": "asset/test.png",
+			"theme_tab_background_incognito_inactive": "asset/test.png",
+			"theme_ntp_background": "asset/test.png",
+			"theme_frame_overlay": "asset/test.png",
+			"theme_frame_overlay_inactive": "asset/test.png",
+			"theme_button_background": "asset/test.png",
+			"theme_ntp_attribution": "asset/test.png",
+			"theme_window_control_background": "asset/test.png"
+		},
+
+		"properties": {
+			"ntp_background_alignment": "bottom",
+			"ntp_background_repeat": "no-repeat",
+			"ntp_logo_alternate": 1
+		}
+	}
+}
