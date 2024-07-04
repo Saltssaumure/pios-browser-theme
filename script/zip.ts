@@ -38,7 +38,7 @@ loc.themeBrowsers.forEach((browser) => {
 	log.info(`Zipping ${browser} theme...`);
 
 	const themeDirInput = path.join(loc.themeDirInput, browser);
-	const themePathOutput = path.join(loc.allDirOutput, `${browser}.zip`);
+	const themePathOutput = path.join(loc.allDirOutput, `pios-${browser}-theme.zip`);
 
 	fs.copyFileSync("./LICENSE", path.join(themeDirInput, "LICENSE"));
 	zip(themeDirInput, themePathOutput);
