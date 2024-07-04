@@ -1,7 +1,7 @@
 export default {
 	header: `/*
  * Copyright (c) 2024 Saltssaumure
- * This work is licensed under the terms of the MIT license:
+ * This project is licensed under the MIT license:
  * https://github.com/Saltssaumure/piOS-browser-theme/blob/main/LICENSE
  */
 `,
