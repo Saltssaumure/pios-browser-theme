@@ -1,7 +1,7 @@
 [preview1]: https://github.com/Saltssaumure/pios-browser-theme/assets/29710355/87869b98-f04c-4324-a779-720c1234cd2b
 [preview2]: https://github.com/Saltssaumure/pios-browser-theme/assets/29710355/bffbbf99-9a6d-4e0a-a65a-e9f6b3732375
 [preview3]: https://github.com/Saltssaumure/pios-browser-theme/assets/29710355/61a45297-c8a1-4064-a0fc-218d6465cf4b
-[preview4]: https://github.com/Saltssaumure/pios-browser-theme/assets/29710355/0652c7d6-d17e-425c-be64-cbbcc52e71e1
+[preview4]: https://github.com/Saltssaumure/pios-browser-theme/assets/29710355/7cb0d427-e15c-4c04-801b-83f6242bc3e7
 
 [github]:   https://github.com/Saltssaumure/pios-browser-theme
 [issues]:   https://github.com/Saltssaumure/pios-browser-theme/issues
