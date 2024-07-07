@@ -1,3 +1,109 @@
-asdf {
-	color: red;
+@forward "./font";
+@forward "./tabs";
+
+@use "./vars" as *;
+@use "./mixins" as *;
+
+// Browser window
+#browser {
+	@include box;
+
+	// Header
+	@at-root #header {
+		border-bottom: $borderThin solid $grey;
+	}
+
+	// Main container
+	@at-root #main {
+		// Main toolbar
+		@at-root .mainbar {
+			// Address bar
+			@at-root .UrlBar-AddressField {
+				color: $red;
+			}
+		}
+
+		// Panels and page container
+		> .inner {
+			// Panels
+			@at-root #panels-container {
+				background-color: $black2;
+				color: $white2;
+
+				// Sidebar
+				@at-root #switch {
+					overflow-x: visible;
+					z-index: 99999;
+
+					.addwebpanel-wrapper > button,
+					.button-toolbar,
+					> * > .button-toolbar,
+					> button {
+						&:not(.toolbar-spacer, .toolbar-spacer-panel, .toolbar-spacer-flexible, .toolbar-divider) {
+							&:hover,
+							&:active {
+								background-color: var(--colorAccentBgDark);
+							}
+						}
+						&.active {
+							box-shadow: none;
+							svg {
+								filter: drop-shadow(0 0 2px currentColor);
+							}
+						}
+					}
+				}
+
+				// Info panel
+				.panel-group {
+					@include box;
+					background-color: $black;
+				}
+			}
+
+			// Page container
+			@at-root #webview-container {
+				@include box;
+			}
+		}
+	}
+
+	// Footer
+	&:not(.tabs-bottom) footer {
+		&::after {
+			display: none;
+		}
+	}
+
+	// Popups
+	@at-root .button-popup {
+		@include box($red);
+		box-shadow: 0 0 10px $red;
+
+		&::before {
+			filter: drop-shadow(0 0 10px $red);
+		}
+
+		@at-root .button-popup-arrow-light::before,
+			.button-popup-arrow-dark::before,
+			.button-popup-right.button-popup-arrow-dark::before {
+			border-bottom-color: $red;
+		}
+	}
+
+	// Tooltip
+	@at-root #vivaldi-tooltip {
+		@at-root .tooltip {
+			@at-root .tab-solo {
+				@include box($red);
+				box-shadow: 0 0 10px $red;
+			}
+		}
+	}
+
+	// Control panel
+	@at-root .ControlPanel {
+		@include box($red);
+		box-shadow: 0 0 10px $red;
+	}
 }

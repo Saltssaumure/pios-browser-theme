@@ -1,0 +1,6 @@
+@use "./vars" as *;
+
+@mixin box($COLOR: $grey) {
+	border: solid $COLOR;
+	border-width: $borderThin $borderThick;
+}

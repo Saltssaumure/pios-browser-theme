@@ -1,0 +1,88 @@
+@use "./vars" as *;
+@use "./mixins" as *;
+
+// Tab bar
+.tabbwar-wrapper {
+	@at-root #tabs-tabbar-container {
+		// When tabs on bottom
+		.address-top &,
+		.address-top-off &,
+		.address-bottom-off & {
+			&.bottom {
+				border-top: 0;
+			}
+		}
+
+		@at-root #tabs-tabbar-container {
+			// Tabs only container
+			@at-root .tab-strip {
+				display: flex;
+				gap: $borderThick;
+
+				// Workspace button
+				.tabbar-workspace-button {
+				}
+
+				// Tab wrapper
+				> span {
+					display: block;
+
+					// Tab
+					.tab-position {
+						@include box;
+
+						// Active tab
+						&:has(.active)::after {
+							content: "";
+							display: block;
+							position: absolute;
+							width: 100%;
+							height: $borderThin;
+							background-color: $black;
+						}
+					}
+				}
+
+				// When tabs on top
+				.top & {
+					.tab-position {
+						border-bottom: 0;
+						&:has(.active)::after {
+							inset: auto 0 (-$borderThin);
+						}
+					}
+				}
+
+				// When tabs on bottom
+				.bottom & {
+					.tab-position {
+						border-top: 0;
+						&:has(.active)::after {
+							inset: (-$borderThin) 0 auto;
+						}
+					}
+				}
+
+				// When tabs on left
+				.left & {
+					.tab-position {
+						border-right: 0;
+						&.active::after {
+							inset: 0 (-$borderThin) 0 auto;
+						}
+					}
+				}
+
+				// When tabs on right
+				.right & {
+					.tab-position {
+						border-left: 0;
+						&.active::after {
+							inset: 0 auto 0 (-$borderThin);
+						}
+					}
+				}
+			}
+		}
+	}
+}

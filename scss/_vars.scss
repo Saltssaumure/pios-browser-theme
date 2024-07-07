@@ -1,0 +1,16 @@
+$colorBg: var(--colorBg);
+$colorFg: var(--colorFg);
+$colorHighBg: var(--colorHighlightBg);
+$colorHighFg: var(--colorHighlightFg);
+$colorAccentBg: var(--colorAccentBg);
+$colorAccentFg: var(--colorAccentFg);
+
+$black: $colorBg;
+$red: $colorFg;
+$grey: $colorHighBg;
+$white: $colorHighFg;
+$black2: $colorAccentBg;
+$white2: $colorAccentFg;
+
+$borderThin: 1px;
+$borderThick: 2px;
