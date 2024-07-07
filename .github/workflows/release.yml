@@ -1,4 +1,4 @@
-name: Build and release
+name: Build theme for release and deploy
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    name: Release
+    name: Release and deploy
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -33,9 +33,20 @@ jobs:
       - name: Build zipped files and css
         run: pnpm run zip && pnpm run build:css
 
-      - name: Release
+      - name: Create release
         uses: ncipollo/release-action@v1
         with:
           artifacts: ./dist/*
           makeLatest: true
           generateReleaseNotes: true
+
+      - name: Copy readme
+        run: cp README.md site/
+
+      - name: Deploy for GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deploy
+          publish_dir: "./site"
+          enable_jekyll: true
