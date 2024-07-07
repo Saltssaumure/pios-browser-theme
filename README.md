@@ -15,6 +15,7 @@
 [img-repo-size]:        https://img.shields.io/github/repo-size/Saltssaumure/pios-browser-theme?label=Repository&style=flat-square
 
 # piOS Browser Themes
+
 [![Buy me a coffee on ko-fi][img-donate]][ko-fi]
 [![Chrome GitHub downloads][img-chrome-theme]][dl-chrome-theme]
 [![Vivaldi GitHub downloads][img-vivaldi-theme]][dl-vivaldi-theme]
@@ -32,6 +33,7 @@ Looking for the piOS experience in Discord? Check out the theme [here](https://g
 
 
 ## Installation
+
 ### Chrome
 <details><summary>Click to expand</summary>
 
@@ -62,6 +64,16 @@ Looking for the piOS experience in Discord? Check out the theme [here](https://g
 This project is licensed under the [MIT license][license].
 
 
+## Credits
+
+### Inspiration
+[SUPERHOT](https://superhotgame.com) - the most innovative shooter I've played in years.
+
+### Tools
+[Pixels to SVG](https://codepen.io/shshaw/pen/XbxvNj) by [Shaw](https://codepen.io/shshaw) - Used to convert the icons to SVG format.
+
+
 ## Questions or suggestions?
+
 - Post [an issue][issues] on GitHub.
 - Post in `#theme-support` on [my support server][discord].
